@@ -1,10 +1,11 @@
 <script>
-
+import AppHeader from './components/AppHeader.vue';
 </script>
 
 <template>
   <header>
-    <nav></nav>
+
+
   </header>
   <main>
     <nav>

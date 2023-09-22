@@ -9,12 +9,7 @@ export default {
 </script>
 
 <template>
-    <header id="app_header" class="text-center">
-
-        <h1>ao</h1>
-
-
-    </header>
+    <h1>as</h1>
     <!-- /#app_header -->
 </template>
 

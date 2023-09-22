@@ -4,7 +4,7 @@ import AppHeader from './components/AppHeader.vue';
 
 <template>
   <header>
-
+    <AppHeader></AppHeader>
 
   </header>
   <main>

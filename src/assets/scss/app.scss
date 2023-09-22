@@ -1,1 +1,19 @@
- 
+ @use '/node_modules/bootstrap/scss/bootstrap.scss';
+
+ /* Variables */
+ @use './partials/variables' as *;
+
+
+ /* Common */
+
+ body {
+     color: $dc_dark;
+ }
+
+
+ //@use './partials/app_main';
+ #app_main {
+     height: 600px; // remove later
+     background-color: $dc_secondary;
+     
+ }

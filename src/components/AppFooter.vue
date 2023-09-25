@@ -3,7 +3,7 @@
 
         <div class="container d-flex">
             <div class="left d-flex">
-                <div class="col-1">
+                <div class="col-2">
                     <div class="title">DC COMICS</div>
                     <div class="link">Characters</div>
                     <div class="link">Comics</div>

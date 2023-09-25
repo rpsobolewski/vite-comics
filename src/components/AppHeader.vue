@@ -2,10 +2,25 @@
 
 export default {
     name: 'AppHeader',
-    components: {
+    data() {
+        return {
+            navItems: ['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'],
+            activeIndex: null,
+        };
+    },
+    methods: {
+        setActive(index) {
+            this.activeIndex = index;
+        },
+        resetActive() {
+            this.activeIndex = null;
+        },
+        isActive(index) {
+            return this.activeIndex === index;
+        },
+    },
+};
 
-    }
-}
 </script>
 
 <template >
@@ -16,36 +31,12 @@ export default {
         </div>
         <div class="col-7 ">
             <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">CHARACTERS</a>
+                <li class="nav-item" v-for="(item, index) in navItems" :key="index" @mouseenter="setActive(index)"
+                    @mouseleave="resetActive">
+                    <a class="nav-link" :class="{ active: isActive(index) }" aria-current="page" href="#">{{ item }}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">COMICS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">MOVIES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">TV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">GAMES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">COLLECTIBLES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">VIDEOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">FANS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">NEWS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">SHOP</a>
-                </li>
+
+
             </ul>
         </div>
     </div>

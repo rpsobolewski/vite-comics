@@ -52,15 +52,17 @@ export default {
 
 .nav-link {
     color: $dc_dark;
+    padding-bottom: 69px;
 
+}
+
+img {
+    margin-bottom: 8px;
 }
 
 .active {
     color: $dc_primary;
-    border-bottom: 2px solid $dc_primary;
-}
-
-* {
-    margin-bottom: 10px;
+    border-bottom: 6px solid $dc_primary;
+    margin-bottom: -6px;
 }
 </style>

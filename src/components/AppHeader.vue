@@ -24,23 +24,24 @@ export default {
 </script>
 
 <template >
-    <div class="pt-4 text-center d-flex align-items-center">
+    <div class="container">
+        <div class="pt-4 text-center d-flex align-items-center">
 
-        <div class="col-4 text-center ">
-            <img src="../assets/img/dc-logo.png" alt="">
-        </div>
-        <div class="col-7 ">
-            <ul class="nav justify-content-center">
-                <li class="nav-item" v-for="(item, index) in navItems" :key="index" @mouseenter="setActive(index)"
-                    @mouseleave="resetActive">
-                    <a class="nav-link" :class="{ active: isActive(index) }" aria-current="page" href="#">{{ item }}</a>
-                </li>
+            <div class="col-3 text-start ">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </div>
+            <div class="col-9 ">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item" v-for="(item, index) in navItems" :key="index" @mouseenter="setActive(index)"
+                        @mouseleave="resetActive">
+                        <a class="nav-link" :class="{ active: isActive(index) }" aria-current="page" href="#">{{ item }}</a>
+                    </li>
 
 
-            </ul>
+                </ul>
+            </div>
         </div>
     </div>
-
     <!-- /#app_header -->
 </template>
 
@@ -57,5 +58,9 @@ export default {
 .active {
     color: $dc_primary;
     border-bottom: 2px solid $dc_primary;
+}
+
+* {
+    margin-bottom: 10px;
 }
 </style>

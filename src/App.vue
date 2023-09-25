@@ -1,5 +1,9 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+import AppBlueNav from './components/AppBlueNav.vue';
+
+
 
 export default {
 
@@ -10,7 +14,7 @@ export default {
     }
   },
   components: {
-    AppHeader,
+    AppHeader, AppMain, AppBlueNav,
 
   }
 
@@ -21,14 +25,9 @@ export default {
   <AppHeader></AppHeader>
 
 
-  <main>
-    <nav>
+  <AppMain></AppMain>
 
-    </nav>
-  </main>
-  <footer>
-
-  </footer>
+  <AppBlueNav></AppBlueNav>
 </template>
 
 <style ></style>

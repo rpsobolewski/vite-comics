@@ -38,4 +38,8 @@ export default {
   <AppSignUp></AppSignUp>
 </template>
 
-<style ></style>
+<style >
+* {
+  font-family: 'Fira Sans', sans-serif;
+}
+</style>

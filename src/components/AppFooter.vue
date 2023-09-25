@@ -47,8 +47,8 @@
 
                 </div>
             </div>
-            <div class="col-5 right">
-                <img class="bgLogo" src="../assets/img/dc-logo-bg.png" alt="">
+            <div class="col-5 right bgLogo">
+
             </div>
         </div>
     </main>
@@ -95,7 +95,9 @@ main {
 }
 
 .bgLogo {
-    margin: -100px 0;
-    height: 650px;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-size: cover;
+    margin-top: -50px;
+
 }
 </style>

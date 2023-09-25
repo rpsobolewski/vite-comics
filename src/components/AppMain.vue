@@ -1,9 +1,9 @@
 <template>
     <main>
 
-        <div class="d-flex flex-wrap">
-            <div v-for="(comic, index) in comics" :key="index" class="col-2 p-2">
-                <div class="">
+        <div class="d-flex flex-wrap container">
+            <div v-for="(comic, index) in comics" :key="index" class="col-2 p-2 ">
+                <div>
                     <img :src="comic.thumb" alt="Comic Thumbnail" class="">
                     <div class="">
                         <h5 class="text-center">{{ comic.series }}</h5>

@@ -49,6 +49,7 @@ export default {
 
 main {
     background-color: $dc_primary;
+    z-index: 1;
 }
 
 img {

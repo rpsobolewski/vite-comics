@@ -18,7 +18,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 main {
-    background-color: $dc_secondary;
+    background-color: $dc_dark;
     color: white;
 }
 </style>

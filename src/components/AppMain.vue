@@ -12,6 +12,9 @@
                 </div>
             </div>
         </div>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="button">LOAD MORE</a>
+        </div>
 
 
 
@@ -115,6 +118,20 @@ img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: contain;
+
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.button {
+    color: white;
+    background-color: $dc_primary;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-bottom: 7px;
 
 }
 </style>

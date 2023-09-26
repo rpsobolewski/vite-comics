@@ -4,6 +4,8 @@ import AppMain from './components/AppMain.vue';
 import AppBlueNav from './components/AppBlueNav.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppSignUp from './components/AppSignUp.vue';
+import AppBanner from './components/AppBanner.vue';
+
 
 
 
@@ -20,7 +22,7 @@ export default {
     }
   },
   components: {
-    AppHeader, AppMain, AppBlueNav, AppFooter, AppSignUp,
+    AppHeader, AppMain, AppBlueNav, AppFooter, AppSignUp, AppBanner,
 
   }
 
@@ -29,10 +31,8 @@ export default {
 
 <template>
   <AppHeader></AppHeader>
-
-
+  <AppBanner></AppBanner>
   <AppMain></AppMain>
-
   <AppBlueNav></AppBlueNav>
   <AppFooter></AppFooter>
   <AppSignUp></AppSignUp>
